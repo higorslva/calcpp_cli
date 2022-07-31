@@ -43,8 +43,11 @@ int main ()
         cout << "[7] - Potência | [8] - Raízes de uma função do segundo grau | [9] - Derivada\n\n";
         cout << "Insira o número da operação que deseja: ";
         cin >> op;
+    #ifdef _WIN32
+        system("cls");
+    #else
         system("clear");
-
+    #endif
         if(op == 8){
             RaizesEquacao();
         }else if (op == 5){
@@ -139,7 +142,11 @@ int main ()
                 cout <<  "Comando Invalido. Saindo..." << endl;
                 break;
             }
-	    system("clear");
+    #ifdef _WIN32
+        system("cls");
+    #else
+        system("clear");
+    #endif
     }
     return 0;
 }
