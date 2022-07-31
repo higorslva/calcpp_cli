@@ -26,7 +26,13 @@ That code is pretty simple  😅
 
 ```mermaid
 graph LR
-A[RaizBaseX] -- Provides root calcs in general --> D[calc.cpp]
-B[RaizQuadrada.h] -- Provides square root calcs only --> D
-C[RaizesEquacao.h] -- Provides root equation --> D
+A[Adicao.h] -- Provides add calcs --> Z[calc.cpp]
+B[Subtracao.h] -- Provides subtracts calcs --> Z
+C[Multiplicacao.h] -- Provides multiply calcs --> Z
+D[Divisao.h] -- Provides division calcs --> Z
+E[RaizBaseX] -- Provides root calcs in general --> Z
+F[RaizQuadrada.h] -- Provides square root calcs only --> Z
+G[RaizesEquacao.h] -- Provides root equation --> Z
+H[Potencia.h] -- Provides exponentiation calcs --> Z
+I[Derivada.h] -- Provides derivation calcs --> Z
 ```
