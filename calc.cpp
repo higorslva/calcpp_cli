@@ -32,8 +32,7 @@ void RaizBaseX(){
 }
 int main ()
 {
-    while (true)
-    {
+    while (true){
         setlocale (LC_ALL, "Portuguese");
         int op;
         float a, b, c;
@@ -46,8 +45,7 @@ int main ()
         cin >> op;
         system("clear")
 
-        if (op == 8)
-        {
+        if (op == 8){
             RaizesEquacao();
         }else if (op == 5){
             RaizQuadrada();
@@ -58,21 +56,18 @@ int main ()
             cin >> a;
             cout << "Insira o segundo valor: ";
             cin >> b;
-        }else if (op == 7)
-        {
+        }else if (op == 7){
             cout << "Insira a base: ";
             cin >> a;
             cout << "Insira a potência: ";
             cin >> b;
-        }else if (op == 9)
-        {
+        }else if (op == 9){
             int der;
             cout << "Insira a regra da derivação\n";
             cout << "[1] - Derivada de uma constante \n[2] - Derivada de uma potência (a^x)\n[3] - Derivada da função exponencial" << endl;
             cin >> der;
 
-            switch (der)
-            {
+            switch (der){
                 case 1:
                     cout << "Não há nada para fazer. A derivada de uma constante é sempre zero." << endl;
                     cout << "d/dx C = 0" << endl;
@@ -106,8 +101,7 @@ int main ()
         }
 
 
-        switch (op)
-        {
+        switch (op){
             case 1:
                 cout << a << " + " << b << " = " << a + b << endl;
                 break;
@@ -120,9 +114,7 @@ int main ()
             case 4:
                 cout << a << " / " << b << " = " << a / b << endl;
                 break;
-            
             case 6:
-               
                 break;
             case 7:
                 cout << a << "^" << b <<" = " << pow(a, b) << endl;
@@ -141,17 +133,13 @@ int main ()
             cout << "Deseja fazer outra operacao? \n [1] - Sim \n [2] - Não" << endl;
             cin >> continuar;
 
-            if(continuar == 2)
-            {
+            if(continuar == 2){
                 break;
-            }
-            else if (continuar != 1)
-            {
+            }else if (continuar != 1){
                 cout <<  "Comando Invalido. Saindo..." << endl;
                 break;
             }
-
-    system("clear");
+	    system("clear");
     }
     return 0;
 }
