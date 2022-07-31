@@ -3,15 +3,17 @@
 #include <locale>
 #include <stdlib.h>
 
-#include "Adicao.h"
-#include "Subtracao.h"
-#include "Multiplicacao.h"
-#include "Divisao.h"
-#include "RaizesEquacao.h"
-#include "RaizQuadrada.h"
-#include "RaizBaseX.h"
-#include "Potencia.h"
-#include "Derivada.h"
+#include "./basic/Adicao.h"
+#include "./basic/Subtracao.h"
+#include "./basic/Multiplicacao.h"
+#include "./basic/Divisao.h"
+
+#include "./algebra/RaizesEquacao.h"
+#include "./algebra/RaizQuadrada.h"
+#include "./algebra/RaizBaseX.h"
+#include "./algebra/Potencia.h"
+
+#include "./calculus/Derivada.h"
 
 
 int main ()
