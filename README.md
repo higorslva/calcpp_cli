@@ -14,7 +14,37 @@
   </a>
 </p>
 
-In W.I.P
+###
+
+<details>
+  <summary>Work In Progress (click to expand)</summary>
+  
+#### Basics Operations
+
+ - [x] Add
+ - [x] Subtract
+ - [x] Multiply
+ - [x] Divide
+ #### Algebra
+ - [x] Exponentiation
+ - [x] Square root
+ - [x] Root calc in general
+ - [x] Root equation
+#### Calculus
+ - [ ] Limits
+ - [x] Derivation
+ - [ ] Integral
+	 - [ ]  Improper integrals
+	 - [ ]  Multiple integration
+	 - [ ]  Line integrals and surface integrals
+	 - [ ]  Contour integrals
+	 - [ ]  Integrals of differential forms
+	 - [ ]  Summations
+	 - [ ]  Functional integrals
+  </details>
+
+###
+ 
 
 ## About the project
 This is an opensource scientific calculator made from scratch by me :)
@@ -22,7 +52,7 @@ Feel free to fork or contribute with this project
 
 ## Code diagram
 
-That code is pretty simple  😅
+For now, that code is pretty simple  😅
 
 ```mermaid
 graph LR
@@ -36,3 +66,4 @@ G[RaizesEquacao.h] -- Provides root equation --> Z
 H[Potencia.h] -- Provides exponentiation calcs --> Z
 I[Derivada.h] -- Provides derivation calcs --> Z
 ```
+
