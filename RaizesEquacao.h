@@ -12,4 +12,7 @@ void RaizesEquacao(){
     std::cin >> b;
     std::cout << "Insira o valor de c: ";
     std::cin >> c;
+    std::cout << "Resultado: " << std::endl;
+    std::cout << "Raíz x1: " << (-b+sqrt((b*b)-4*a*c))/(2*a) << std::endl;
+    std::cout << "Raíz x2: " << (-b-sqrt((b*b)-4*a*c))/(2*a) << std::endl;
 }
