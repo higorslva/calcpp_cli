@@ -8,7 +8,7 @@ using namespace std;
 void RaizesEquacao(){
     float a, b, c;
     cout << "Calcular raízes de equações 'ax²+bx+c=0'\n";
-    cout << "Caso o resultado mostre 'nan', as raízes não existem para essa função" << endl;
+    cout << "(Caso o resultado mostre 'nan', as raízes não existem para essa função)" << endl;
     cout << "Insira o valor de a: ";
     cin >> a;
     cout << "Insira o valor de b: ";
@@ -43,9 +43,9 @@ int main ()
         cout << "[7] - Potência | [8] - Raízes de uma função do segundo grau | [9] - Derivada\n\n";
         cout << "Insira o número da operação que deseja: ";
         cin >> op;
-        system("clear")
+        system("clear");
 
-        if (op == 8){
+        if(op == 8){
             RaizesEquacao();
         }else if (op == 5){
             RaizQuadrada();
