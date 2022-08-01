@@ -30,6 +30,7 @@
  - [x] Square root
  - [x] Root calc in general
  - [x] Root equation
+ - [ ] Sin, Cos, Tan, etc.
 #### Calculus
  - [ ] Limits
  - [x] Derivation
@@ -56,14 +57,14 @@ For now, that code is pretty simple  😅
 
 ```mermaid
 graph LR
-A[Adicao.h] -- Provides add calcs --> Z[calc.cpp]
-B[Subtracao.h] -- Provides subtracts calcs --> Z
-C[Multiplicacao.h] -- Provides multiply calcs --> Z
-D[Divisao.h] -- Provides division calcs --> Z
-E[RaizBaseX] -- Provides root calcs in general --> Z
-F[RaizQuadrada.h] -- Provides square root calcs only --> Z
-G[RaizesEquacao.h] -- Provides root equation --> Z
-H[Potencia.h] -- Provides exponentiation calcs --> Z
-I[Derivada.h] -- Provides derivation calcs --> Z
+1{basics} --> A[Adicao.h] -- Provides add calcs --> Z((calc.cpp))
+1 --> B[Subtracao.h] -- Provides subtracts calcs --> Z
+1 --> C[Multiplicacao.h] -- Provides multiply calcs --> Z
+1 --> D[Divisao.h] -- Provides division calcs --> Z
+2{algebra} --> E[RaizBaseX] -- Provides root calcs in general --> Z
+2 --> F[RaizQuadrada.h] -- Provides square root calcs only --> Z
+2 --> G[RaizesEquacao.h] -- Provides root equation --> Z
+2 --> H[Potencia.h] -- Provides exponentiation calcs --> Z
+3{calculus} --> I[Derivada.h] -- Provides derivation calcs --> Z
 ```
 
