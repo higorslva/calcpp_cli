@@ -1,3 +1,4 @@
+
 # CalCpp - A simple CLI scientific calculator in C++
 
 <p align="center">
@@ -61,10 +62,7 @@ graph LR
 1 --> B[Subtracao.h] -- Provides subtracts calcs --> Z
 1 --> C[Multiplicacao.h] -- Provides multiply calcs --> Z
 1 --> D[Divisao.h] -- Provides division calcs --> Z
-2{algebra} --> E[RaizBaseX] -- Provides root calcs in general --> Z
-2 --> F[RaizQuadrada.h] -- Provides square root calcs only --> Z
-2 --> G[RaizesEquacao.h] -- Provides root equation --> Z
-2 --> H[Potencia.h] -- Provides exponentiation calcs --> Z
+2{algebra} --> E[algebra.h] -- Provides algebra calcs --> Z
 3{calculus} --> I[Derivada.h] -- Provides derivation calcs --> Z
 ```
 
