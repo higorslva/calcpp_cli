@@ -30,6 +30,7 @@
  - [x] Square root
  - [x] Root calc in general
  - [x] Root equation
+ - [ ] Sin, Cos, Tan, etc.
 #### Calculus
  - [ ] Limits
  - [x] Derivation
