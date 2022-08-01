@@ -31,7 +31,8 @@
  - [x] Square root
  - [x] Root calc in general
  - [x] Root equation
- - [ ] Sin, Cos, Tan, etc.
+ - [x] Sin, Cos, Tan, etc.
+ - [ ] Polynomials expression
 #### Calculus
  - [ ] Limits
  - [x] Derivation
