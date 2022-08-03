@@ -1,22 +1,33 @@
-/*
-Not implemented in the main yet.
-*/
-
 #include <iostream>
-#include <math.h>
+#include <functional>
+#include <cmath>
 
-using namespace std;
+// Quanto menor este número for, menor serão os retângulos e mais preciso será a aproximação
+#define DELTA_X 0.0000001
 
-double integral(double(*f)(double x), double a, double b, int n) {
-    double step = (b - a) / n;  // largura de cada pequeno retângulo
-    double area = 0.0;  // area
-    for (int i = 0; i < n; i ++) {
-        area += f(a + (i + 0.5) * step) * step; // soma cada pequeno retângulo
+// f(x) = x^2 + sen(1)
+double f(double x){
+    return x * x + sin(1);
+}
+// função que retorna a integral de a até b de uma função f
+double integral(double a, double b, const std::function<double(double)> &f){
+    // variável para onde a soma de cada retângulo será adicionada
+    double sum = 0.0;
+    // repete através de cada x_k no intervalo [a, b]. x_k = x_(k-1) + DELTA_X.
+    for (auto x_k = a; x_k <= b; x_k += DELTA_X){
+        // Área do retângulo = base * altura; aqui, base = DELTA_X e a altura = f(x_k)
+        sum += f(x_k) * DELTA_X;
     }
-    return area;
+    // A variável sum agora contem a área total combinada dos retângulos
+    return sum;
 }
+
 int main(){
-  cout.precision(7);
-  cout << integral(sin, 1, M_PI, 2); //infelizmente lê apenas caso esteja dentro do código. Ainda não recebe input do usuário
-  return 0;
+    // Encontra a integral nos limites 0 a 1 de f(x), colocada no início do código
+    // double a, b;
+    //std::cout << integral(a, b, f) << '\n';
+    std::cout << integral(0, 1, f) << '\n';
+    // O próximo passo é o usuário digitar uma string e o algoritmo salvar no início do código, então
+    // perguntar aqui os limites de integração e enfim devolver o resultado
 }
+
