@@ -11,7 +11,7 @@
 
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/higorslva/calcpp_cli?color=04D361&labelColor=000000">
 
-  <a href="https://github.com/johnggli/linktree/commits/master">
+  <a href="https://github.com/higorslva/calcpp_cli/commits/main">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/higorslva/calcpp_cli?color=04D361&labelColor=000000">
   </a>
 </p>
