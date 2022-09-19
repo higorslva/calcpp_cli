@@ -1,6 +1,6 @@
 OBJS	= calc.o
 SOURCE	= calc.cpp
-HEADER	= ./algebra/algebra.h ./basic/Adicao.h ./basic/Subtracao.h ./basic/Multiplicacao.h ./basic/Divisao.h ./calculus/Derivada.h
+HEADER	= ./aritmetics/aritmetics.h ./basic/Adicao.h ./basic/Subtracao.h ./basic/Multiplicacao.h ./basic/Divisao.h ./calculus/Derivada.h
 OUT	= calcpp
 CC	 = g++
 FLAGS	 = -g -c -Wall

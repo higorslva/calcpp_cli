@@ -6,8 +6,8 @@
 #include "./basic/Subtracao.h"
 #include "./basic/Multiplicacao.h"
 #include "./basic/Divisao.h"
-// for algebra
-#include "./algebra/algebra.h"
+// for aritmetics
+#include "./aritmetics/aritmetics.h"
 // for calculus
 #include "./calculus/Derivada.h"
 #include "./calculus/Integrais.h"
@@ -25,7 +25,7 @@ int main ()
         cout << "Calculadora v0.5.16\n" << endl;
         cout << "Operações possíveis:\n\n";
         cout << "[1] - Soma | [2] - Subtração | [3] - Multiplição\n";
-        cout << "[4] - Divisão | [5] - Cálculos Algébricos | [6] - Raízes de uma função do segundo grau\n";
+        cout << "[4] - Divisão | [5] - Cálculos Aritméticos | [6] - Raízes de uma função do segundo grau\n";
         cout << "[7] - Derivada | [8] - Integrais\n";
         cout << "[0] - Sair\n\n";
         cout << "Insira o número da operação que deseja: ";
