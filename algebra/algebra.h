@@ -74,7 +74,31 @@ void RaizesEquacao(){
     cout << "\n" << endl;
 }
 
+void Somatorio(){
+    int n, aux, sum=0;
 
+    cout << "Somatório de: ";
+    cin >> n;
+
+    for(aux=1 ; aux<=n ; aux++)
+        sum += aux;
+
+    cout << "Somatório: " << sum << endl;
+
+}
+
+void Fatorial(){
+    int n, aux, prod=1;
+
+    cout << "Fatorial de: ";
+    cin >> n;
+
+    for(aux=1 ; aux<=n ; aux++)
+        prod *= aux;
+
+    cout << "Fatorial: " << prod << endl;
+
+}
 void Algebra(){
   int z;
   while (z != 0){
@@ -83,6 +107,7 @@ void Algebra(){
     cout << "[1] - Potência | [2] - Seno | [3] - Raiz Quadrada\n";
     cout << "[4] - Coseno | [5] - Tangente | [6] - Logarítimo natural\n";
     cout << "[7] - Log base 10 | [8] - Raiz com base X | [9] - Raizes de uma equação do 2º grau\n";
+    cout << "[10] - Somatório | [11] - Fatorial\n";
     cout << "[0] - Voltar ao menu anterior\n";
 
     cin>>z;
@@ -145,6 +170,12 @@ void Algebra(){
       case 9:
         RaizesEquacao();
         break;
+      case 10:
+	Somatorio();
+	break;
+      case 11:
+	Fatorial();
+	break;
 
     }
   }
