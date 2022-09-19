@@ -27,12 +27,14 @@
  - [x] Subtract
  - [x] Multiply
  - [x] Divide
- #### Algebra
+ #### Aritmetics Operations
  - [x] Exponentiation
  - [x] Square root
  - [x] Root calc in general
  - [x] Root equation
  - [x] Sin, Cos, Tan, etc.
+ - [x] Factorial
+ - [x] Sum
  - [ ] Polynomials expression
 #### Calculus
  - [ ] Limits
@@ -74,7 +76,7 @@ graph LR
 1 --> B[Subtracao.h] -- Provides subtracts calcs --> Z
 1 --> C[Multiplicacao.h] -- Provides multiply calcs --> Z
 1 --> D[Divisao.h] -- Provides division calcs --> Z
-2{algebra} --> E[algebra.h] -- Provides algebra calcs --> Z
+2{aritmetics} --> E[aritmetics.h] -- Provides aritmetics calcs --> Z
 3{calculus} --> I[Derivada.h] -- Provides derivation calcs --> Z
 ```
 
