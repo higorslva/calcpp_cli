@@ -22,7 +22,7 @@ int main ()
         setlocale (LC_ALL, "Portuguese");
         int op;
         float a, b, c;
-        cout << "Calculadora v0.5.15\n" << endl;
+        cout << "Calculadora v0.5.16\n" << endl;
         cout << "Operações possíveis:\n\n";
         cout << "[1] - Soma | [2] - Subtração | [3] - Multiplição\n";
         cout << "[4] - Divisão | [5] - Cálculos Algébricos | [6] - Raízes de uma função do segundo grau\n";
