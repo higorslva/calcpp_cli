@@ -22,7 +22,7 @@ int main ()
         setlocale (LC_ALL, "Portuguese");
         int op;
         float a, b, c;
-        cout << "Calculadora v0.5.17 - alpha build\n" << endl;
+        cout << "Calculadora v0.5.18 - alpha build\n" << endl;
         cout << "Operações possíveis:\n\n";
         cout << "[1] - Soma | [2] - Subtração | [3] - Multiplição\n";
         cout << "[4] - Divisão | [5] - Cálculos Aritméticos | [6] - Raízes de uma função do segundo grau\n";
@@ -44,7 +44,7 @@ int main ()
         }else if (op == 4){
             Divisao();
         }else if (op == 5){
-            Algebra();
+            aritmetics();
         }else if (op == 6){
             RaizesEquacao();
         }else if (op == 7){
