@@ -21,7 +21,7 @@ int main ()
     while (true){
         setlocale (LC_ALL, "Portuguese");
         int op;
-        cout << "Calculadora v0.5.19 - alpha build\n" << endl;
+        cout << "Calculadora v0.6 - alpha build\n" << endl;
         cout << "Operações possíveis:\n\n";
         cout << "[1] - Soma | [2] - Subtração | [3] - Multiplição\n";
         cout << "[4] - Divisão | [5] - Cálculos Aritméticos | [6] - Raízes de uma função do segundo grau\n";
@@ -55,7 +55,7 @@ int main ()
           break;
         }
         int continuar;
-        cout << "Deseja fazer outra operacao? \n [1] - Sim \n [2] - Não" << endl;
+        cout << "Deseja fazer outra operacao? \n[1] - Sim \n[2] - Não" << endl;
         cin >> continuar;
         if(continuar == 2){
             break;
