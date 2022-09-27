@@ -99,7 +99,7 @@ void Fatorial(){
     cout << "Fatorial: " << prod << endl;
 
 }
-void Algebra(){
+void aritmetics(){
   int z;
   while (z != 0){
     float a,b;
