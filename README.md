@@ -35,7 +35,7 @@
  - [x] Sin, Cos, Tan, etc.
  - [x] Factorial
  - [x] Sum
- - [ ] Polynomials expression
+ - [x] Polynomials expression
 #### Calculus
  - [ ] Limits
  - [x] Derivation
