@@ -1,5 +1,5 @@
-#include <iostream>
-#include <cstdlib>
+//#include <iostream>
+//#include <cstdlib>
 #include <string>
 #include <bits/stdc++.h>
 #include <cmath>
@@ -128,7 +128,7 @@ power = N;
         {
             break;
         }
-        if (a[i] > 0 & i!=0)
+        if ((a[i] > 0) & (i!=0))
             cout << " + ";
         else if (a[i] < 0)
             cout << " - ";
