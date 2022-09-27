@@ -58,6 +58,7 @@ int main ()
         cout << "Deseja fazer outra operacao? \n[1] - Sim \n[2] - Não" << endl;
         cin >> continuar;
         if(continuar == 2){
+            cout << ":)" << endl;
             break;
         }else if (continuar != 1){
             cout <<  "Comando Invalido. Saindo..." << endl;
