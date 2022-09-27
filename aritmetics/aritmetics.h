@@ -1,7 +1,10 @@
 #include <iostream>
+#include <cstdlib>
 #include <string>
 #include <bits/stdc++.h>
 #include <cmath>
+
+#define MAXSIZE 10
 
 using std::cin;
 using std::cout;
@@ -99,6 +102,42 @@ void Fatorial(){
     cout << "Fatorial: " << prod << endl;
 
 }
+void PolyExp(){
+  int a[MAXSIZE];
+  int i, N, power;
+  float x, polySum;
+  cout << "Insira a ordem do polinômio: ";
+  cin >> N;
+  cout << "Insira o valor de x: ";
+  cin >> x;
+
+  cout << "Insira " << N + 1 << " coeficientes:" << endl;
+  for (i = 0; i <= N; i++) {
+    scanf("%d", & a[i]);
+  }
+  polySum = a[0];
+  for (i = 1; i <= N; i++) {
+    polySum = polySum * x + a[i];
+  }
+power = N;
+
+    cout << "O polinômio dado é: ";
+    for (i = 0; i <= N; i++)
+    {
+        if (power < 0)
+        {
+            break;
+        }
+        if (a[i] > 0 & i!=0)
+            cout << " + ";
+        else if (a[i] < 0)
+            cout << " - ";
+        else
+            cout << " ";
+        printf("%dx^%d  ", abs(a[i]), power--);
+  }
+  cout << "\nA soma do polinomio é: " << polySum;
+}
 void aritmetics(){
   int z;
   while (z != 0){
@@ -107,7 +146,7 @@ void aritmetics(){
     cout << "[1] - Potência | [2] - Seno | [3] - Raiz Quadrada\n";
     cout << "[4] - Coseno | [5] - Tangente | [6] - Logarítimo natural\n";
     cout << "[7] - Log base 10 | [8] - Raiz com base X | [9] - Raizes de uma equação do 2º grau\n";
-    cout << "[10] - Somatório | [11] - Fatorial\n";
+    cout << "[10] - Somatório | [11] - Fatorial | [12] - Expressões Polinomiais\n";
     cout << "[0] - Voltar ao menu anterior\n";
 
     cin>>z;
@@ -171,11 +210,14 @@ void aritmetics(){
         RaizesEquacao();
         break;
       case 10:
-	Somatorio();
-	break;
+	      Somatorio();
+	      break;
       case 11:
-	Fatorial();
-	break;
+	      Fatorial();
+	      break;
+      case 12:
+        PolyExp();
+        break;
 
     }
   }
