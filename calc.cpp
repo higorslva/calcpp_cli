@@ -21,7 +21,7 @@ int main ()
     while (true){
         setlocale (LC_ALL, "Portuguese");
         int op;
-        cout << "\tCaculadora v0.6 - alpha build\n" << endl;
+        cout << "\tCaculadora v0.7 - alpha build\n" << endl;
         cout << "\tOperações possíveis:\n\n";
         cout << "\t[1] - Soma | [2] - Subtração | [3] - Multiplição\n";
         cout << "\t[4] - Divisão | [5] - Cálculos Aritméticos | [6] - Raízes de uma função do segundo grau\n";

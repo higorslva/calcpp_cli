@@ -1,5 +1,5 @@
 #include <iostream>
-//#include "IntegralSimples.h"
+#include "IntegralSimples.h"
 #include "IntegralDupla.h"
 //#include "IntegralTripla.h"
 
@@ -11,8 +11,7 @@ void Integrais(){
 
   switch (option){
     case 1:
-      //IntegralSimples();
-      std::cout << "Ainda não implementado :(" << std::endl;
+      IntegralSimples();
       break;
     case 2:
       IntegralDupla();
