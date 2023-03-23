@@ -16,8 +16,7 @@ using std::cin;
 using std::cout;
 using std::endl;
 
-int main ()
-{
+int main (){
     while (true){
         setlocale (LC_ALL, "Portuguese");
         int op;

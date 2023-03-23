@@ -6,6 +6,7 @@
 #define DELTA_X 0.0000001
 
 // função que retorna a integral de a até b de uma função f
+/*
 double integral(double a, double b, const std::function<double(double)> &f){
     // variável para onde a soma de cada retângulo será adicionada
     double sum = 0.0;
@@ -16,18 +17,17 @@ double integral(double a, double b, const std::function<double(double)> &f){
     }
     // A variável sum agora contem a área total combinada dos retângulos
     return sum;
-}
+}*/
 
-double limites(double a, double b){
+void IntegralSimples(){
     double a, b;
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
     std::cout << "Digite o limite inferior de integração: ";
     std::cin >> a;
     std::cout << "Digite o limite superior de integração: ";
     std::cin >> b;
-    std::cout << integral(a, b, f) << '\n';
-}
 
-void IntegralSimples(){
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
     std::string function_string;
     std::cout << "Digite a função que deseja integrar (use x como variável): ";
     std::getline(std::cin, function_string);
@@ -44,6 +44,14 @@ void IntegralSimples(){
         // usamos a função std::stod para converter a string modificada em um número real
         return std::stod(modified_string);
     };
-    limites();
+
     
+    //std::cout << integral(a, b, f) << '\n';
+    double sum = 0.0;
+    // repete através de cada x_k no intervalo [a, b]. x_k = x_(k-1) + DELTA_X.
+    for (auto x_k = a; x_k <= b; x_k += DELTA_X){
+        // Área do retângulo = base * altura; aqui, base = DELTA_X e a altura = f(x_k)
+        sum += f(x_k) * DELTA_X;
+    }
+    std::cout << sum << std::endl;
 }
